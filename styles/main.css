@@ -1,0 +1,8 @@
+.section__img {
+    display: none;
+    width: 100%;
+}
+
+.section__img--active {
+    display: block;
+}
