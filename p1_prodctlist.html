@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Advanced JS Example</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="media-queries.css">
+
+	</head>
+	<body>
+		<div class="container" id="page-wrapper">
+
+			<div class="filter-wrapper">
+
+				<div class="form-group" style="margin-right: 20px;">
+					<label for="orderBy">Order By</label>
+					<select id="orderBy" name="orderBy">
+						<option value="name">Name</option>
+						<option value="In_Stock">In_Stock</option>
+						<option value="_id">Article ID</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="In_Stock">Show In_Stock?</label>	
+					<select id="In_Stock" name="In_Stock">
+						<option value="true">True</option>
+						<option value="false">False</option>
+					</select>
+				</div>
+
+			</div>
+<div class="app-container">
+
+			<aside class="navigation">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+				<a href="#">Link 4</a>
+			</aside>
+
+			<div id="results-table2" class="content-container">
+			
+				
+			</div>
+
+		</div>
+			<table id="results-table" border="1">
+				<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Name</th>
+						<th>Article ID</th>
+						<th>In_Stock</th>
+					</tr>
+				</thead>
+
+				<!-- Results will be added through JavaScript -->
+				<tbody></tbody>
+			</table>
+
+		</div>
+		
+		<script type="text/javascript" src="advanced.js"></script>
+	</body>
+</html>

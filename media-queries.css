@@ -1,0 +1,191 @@
+Skip to content
+Why GitHub? 
+Enterprise
+Explore 
+Marketplace
+Pricing 
+Search
+
+Sign in
+Sign up
+1 1 0 bnissen24/week2CSS
+ Code  Issues 0  Pull requests 0  Projects 0  Insights
+Join GitHub today
+GitHub is home to over 31 million developers working together to host and review code, manage projects, and build software together.
+
+week2CSS/mediaQueries/media-queries.css
+74c92a3  25 days ago
+@arkzero arkzero first commit
+     
+94 lines (79 sloc)  1.31 KB
+html, body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: lightblue;
+}
+
+.app-container {
+	width: 1024px;
+	margin: auto;
+	display: flex;
+	min-height: 100%;
+	background-color: white;
+}
+
+.navigation {
+	flex: 0 0 150px;
+	min-height: 100%;
+	background-color: #3333FF;
+}
+
+.navigation a {
+	display: block;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: red;
+}
+
+.content-container {
+	flex: 1 1 auto;
+	width: 100%;
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.content-container .card {
+	height: 195px;
+	flex: 0 0 195px;
+	background-color: #bfbfbf;
+	border: 3px solid #333;
+	margin: 5px;
+}
+
+@media only screen and (max-width: 1199px) {
+	.app-container {
+		flex-direction: column;
+		width: 900px;
+	}
+
+	.navigation {
+		min-height: auto;
+		flex: 0 0 35px;
+	}
+
+	.navigation a {
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+	.app-container {
+		width: 720px;
+	}
+
+	.content-container .card {
+		flex-basis: 330px;
+		height: 330px;
+	}
+}
+
+@media only screen and (max-width: 749px) {
+	.app-container {
+		margin: 0 15px;
+		width: calc(100% - 30px);
+	}
+
+	.content-container {
+		width: calc(100% - 50px);
+	}
+
+	.content-container .card {
+		height: 50px;
+		flex-basis: 100%;
+	}
+}
+.filter-wrapper {
+	display: flex;
+	margin: 15px 0;
+}
+
+#results-table {
+	width: 100%;
+}
+
+#results-table td, #results-table th {
+	padding: 5px;
+}
+body {
+	display: flex;
+}
+
+.card, .card--dark {
+	height: 330px;
+	width: 330px;
+	border: 3px solid #333;
+	display: inline-block;
+	margin: 10px 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card__content {
+	width: 100%;
+	height: 220px;
+	background-color: #bfbfbf;
+	flex: 1 1 auto;
+}
+
+.card__title {
+	padding: 10px 15px 0;
+	font-weight: 700;
+	color: #666;
+	flex: 0 0 30px;
+}
+
+.card__body, .card__body--big {
+	padding: 10px 15px;
+	font-weight: 200;
+	color: #333;
+	flex: 0 0 20px;
+}
+
+.card__body--big {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.card--dark .card__content {
+	background-color: #eee;
+}
+
+.card--dark .card__title {
+	background-color: #666;
+	color: #bfbfbf;
+}
+
+.card--dark .card__body, .card--dark .card__body--big {
+	background-color: #666;
+	color: #efefef;
+}
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
