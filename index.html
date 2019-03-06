@@ -10,36 +10,55 @@
     <!-- My styles -->
     <link href="styles/main.css" type="text/css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="#">Brand Name</a>
-            <div>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                </ul>
+<body >
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-sm">
+                <nav class="navbar navbar-expand-sm">
+                    <a class="navbar-brand" href="#">Brand Name</a>
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="row">
+            <section class="col-sm section">
+                <img src="images/collins-lesulie-1190667-unsplash.jpg" class="section__img section__img--active" title="Photo by Collins Lesulie on Unsplash" alt="Model on desert road">
+                <img src="images/richard-szilagyi-1156448-unsplash.jpg" class="section__img" title="Photo by Richard Szilagyi on Unsplash" alt="Model on coastline rooftop">
+                <img src="images/tobias-cornille-142864-unsplash.jpg" class="section__img" title="Photo by Tobias Cornille on Unsplash" alt="Hiker in mountain valley">
+            </section>
+        </div>
+
+        <div class="row">
+            <article class="col-sm">
+                <h1>Company Name</h1>
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+                <p>Paragraph 3</p>
+            </article>
+        </div>
+
+        <footer class="row">
+            <div class="col-sm">
+                <p>Phone number</p>
             </div>
-        </nav>
-    </header>
-
-    <section class="section">
-        <img src="images/collins-lesulie-1190667-unsplash.jpg" class="section__img section__img--active" title="Photo by Collins Lesulie on Unsplash" alt="Model on desert road">
-        <img src="images/richard-szilagyi-1156448-unsplash.jpg" class="section__img" title="Photo by Richard Szilagyi on Unsplash" alt="Model on coastline rooftop">
-        <img src="images/tobias-cornille-142864-unsplash.jpg" class="section__img" title="Photo by Tobias Cornille on Unsplash" alt="Hiker in mountain valley">
-    </section>
-
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
+            <div class="col-sm">
+                <p>Address</p>
+            </div>
+            <div class="col-sm">
+                <a href="#" target="_blank">Social media</a>
+            </div>
+        </footer>
+    </div>
 <script src="js/landing.js"></script>
 </body>
 </html>
