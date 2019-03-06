@@ -1,13 +1,20 @@
-function switchDisplay() {
+(function (){
+    function switchDisplay() {
+        slides[indexOfActive].classList.remove("section__img--active");
+        slides[indexOfNext].classList.add("section__img--active");
 
-}
+        indexOfActive = indexOfNext;
+        if (indexOfActive !== lastIndex) {
+            indexOfNext++;
+        }
+        else {
+            indexOfNext = 0;
+        }
+    }
 
-let slides = document.querySelectorAll(".section__img");
+    let slides = document.querySelectorAll(".section__img");
+    let indexOfActive = 0, indexOfNext = 1;
+    let lastIndex = slides.length - 1;
 
-for (let counter = 0; counter < slides.length; counter++) {
-    console.log(slides[counter].classList);
-}
-
-let currentImage = slides[0];
-
-document.setInterval(switchDisplay(), 3000);
+    let id = setInterval(switchDisplay, 5000);
+}());
