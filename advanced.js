@@ -31,8 +31,8 @@ var foo = 'foo'; // Variables declared outside of any function are considered gl
 		tableBody.innerHTML = '';
 		// Map each database record to a string containing the HTML for it's row
 		var tableRows = results.map(function (result, index) {
-			return '<div class="card">'+ '<div class="card__body">'+ index + result.name +  
-					result._id  + result.In_Stock + '<img src=' + result.img_src + '>' + '</div>'+ '</div>';
+			return '<div class="card card--fit-inside">'+ '<div class="card__body">'+ index + result.name +
+					result._id  + result.In_Stock + '<img class="image--fit-inside" src=' + result.img_src + '>' + '</div>'+ '</div>';
 		});
 		// Set the contents of the table body to the new set of rendered HTML rows
 		

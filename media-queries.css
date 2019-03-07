@@ -176,6 +176,14 @@ body {
 	background-color: #666;
 	color: #efefef;
 }
+
+.image--fit-inside {
+	width: 75%;
+}
+
+.card--fit-inside {
+	overflow: hidden;
+}
 © 2019 GitHub, Inc.
 Terms
 Privacy
